@@ -1,8 +1,10 @@
 // Import Express.js
 import express from "express";
+import dotenv from "dotenv";
 
 // Create an Express app
 const app = express();
+dotenv.config();
 
 // Middleware to parse JSON bodies
 app.use(express.json());
